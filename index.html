@@ -23,13 +23,13 @@
   body {
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 20px;
     background:
       radial-gradient(1000px 500px at 50% -10%, #ffe3ea 0%, transparent 60%),
       linear-gradient(180deg, #fdf0ff 0%, #ffeaf2 55%, #e9f0ff 100%);
-    overflow: hidden;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
     position: relative;
   }
 
@@ -78,6 +78,7 @@
     backdrop-filter: blur(6px);
     width: 100%;
     max-width: 580px;
+    margin: auto;
     border-radius: 30px;
     padding: 48px 36px 40px;
     text-align: center;
